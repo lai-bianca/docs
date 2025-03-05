@@ -25,7 +25,7 @@
             "group": "Essentials",
             "pages": [
               "essentials/test",
-              "essentials/markdown",
+              "essentials/markdown-test",
               "essentials/code",
               "essentials/images",
               "essentials/settings",
@@ -54,7 +54,11 @@
             ]
           }
         ]
-      }
+      },
+      {
+        "tab": "LandingLens API",
+        "openapi": "landinglens-api/document.json"
+    }
     ],
     "global": {
       "anchors": [
@@ -99,5 +103,11 @@
       "github": "https://github.com/mintlify",
       "linkedin": "https://linkedin.com/company/mintlify"
     }
+  },
+  "redirects": [
+  {
+    "source": "essentials/markdown",
+    "destination": "essentials/markdown-test"
   }
+]
 }
