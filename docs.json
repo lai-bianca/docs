@@ -24,6 +24,8 @@
           {
             "group": "Essentials",
             "pages": [
+              "essentials/md_test",
+              "essentials/python_readme",
               "essentials/test",
               "essentials/markdown-test",
               "essentials/code",

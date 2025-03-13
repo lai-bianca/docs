@@ -1,0 +1,47 @@
+---
+title: 'MD Test'
+description: 'This is a test file'
+icon: 'text-size'
+---
+
+import SnippetIntro from '/snippets/snippet-intro.mdx';
+import {companyName, prodName} from '/snippets/custom-variables.mdx';
+
+This is a new test file. Isn't it great?
+
+You can learn about markdown basics in the [Markdown](/essentials/markdown) section.
+
+## This is an imported snippet
+
+Here is intro text:
+
+<SnippetIntro />
+
+## Here are variables
+
+Our company name is {companyName}. Our platform is called {prodName}.
+
+## Numbered List
+
+This section is from [Load Images with Sync Snowflake Data](https://support.landing.ai/docs/load-images-from-snowflake#load-images-with-sync-snowflake-data).
+After granting LandingLens access to the stage with the images you want to load into LandingLens, you can load those images into a LandingLens project.
+
+1. Open the project you want to load images to.
+
+2. Click **Sync Snowflake Data**.
+
+   <img height="200" src="/images/SyncSFData_1(1).png" />
+
+3. Enter the **database**, **schema**, and **stage** that have the images you want to load into LandingLens. The drop-downs automatically populate based on the locations that you created or have access to.
+
+4. Click the directory path (`⌄ /`) in the **Folder** box. Use this field to navigate to and select a directory on the Snowflake stage.
+
+   * If you select the root directory (or don't select any directory), supported images from the stage and its directories will be loaded into LandingLens.
+
+   * If you want to load images from only a specific directory, select that directory.
+
+5. Click **Sync**.
+
+   ![Sync Snowflake Data](/images/SyncSFData_2\(1\).png "Popup - Sync Snowflake Data")
+
+6. Images from the stage (or the selected directories) are loaded to the LandingLens project in batches. The page refreshes every 10 seconds to display new images until all are loaded.
