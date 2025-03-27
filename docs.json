@@ -84,8 +84,11 @@
         "dropdown": "VisionAgent",
         "icon": "sqaure-terminal",
         "pages": [
-          "essentials/md_test",
-          "essentials/python_readme"
+          "agents/agents",
+          "agents/visionagent",
+          "agents/agentic-doc-ext",
+          "agents/agentic-api-key"
+        
         ]
       }
     ]
