@@ -7,7 +7,7 @@
     "light": "#07C983",
     "dark": "#15803D"
   },
-  "favicon": "/favicon_landing-ai.svg",
+  "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
@@ -16,22 +16,9 @@
           {
             "group": "Get Started",
             "pages": [
-              "get-started/landinglens-get-started",
               "introduction",
               "quickstart",
               "development"
-            ]
-          },
-          {
-            "group": "Image Capture Best Practices",
-            "pages": [
-              "image-capture-best-practices/image-capture-best-practices"
-            ]
-          },
-          {
-            "group": "Upload Images",
-            "pages": [
-              "upload-images/upload-images"
             ]
           },
           {
@@ -96,14 +83,14 @@
     }
   },
   "logo": {
-    "light": "/logo/LandingAI-logo-primary-color-RGB.svg",
-    "dark": "/logo/LandingAI-logo-primary-color-RGB.svg"
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
   },
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:support@landing.ai"
+        "href": "mailto:hi@mintlify.com"
       }
     ],
     "primary": {
@@ -114,9 +101,9 @@
   },
   "footer": {
     "socials": {
-      "x": "https://twitter.com/landingAI",
-      "github": "https://github.com/landing-ai",
-      "linkedin": "https://www.linkedin.com/company/landing-ai/"
+      "x": "https://x.com/mintlify",
+      "github": "https://github.com/mintlify",
+      "linkedin": "https://linkedin.com/company/mintlify"
     }
   },
   "redirects": [
