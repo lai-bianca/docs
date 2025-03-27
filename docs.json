@@ -10,110 +10,85 @@
   "favicon": "/favicon_landing-ai.svg",
   "navigation": {
     "dropdowns": [
-    {
-      "dropdown": "LandingLens",
-      "icon": "book-open",
-      "pages": [
-        "get-started/landinglens-get-started",
-        "introduction"
-      ]
-    }
-    {
-      "dropdown": "VisionAgent",
-      "icon": "sqaure-terminal",
-      "pages": [
-        "essentials/md_test",
-        "essentials/python_readme"
-      ]
-    }
-
-  ]
-}
-    "tabs": [
       {
-        "tab": "Guides",
-        "groups": [
+        "dropdown": "LandingLens",
+        "icon": "book-open",
+        "tabs": [
           {
-            "group": "Get Started",
-            "pages": [
-              "get-started/landinglens-get-started",
-              "introduction",
-              "quickstart",
-              "development"
+            "tab": "Guides",
+            "groups": [
+              {
+                "group": "Get Started",
+                "pages": [
+                  "get-started/landinglens-get-started",
+                  "introduction",
+                  "quickstart",
+                  "development"
+                ]
+              },
+              {
+                "group": "Image Capture Best Practices",
+                "pages": [
+                  "image-capture-best-practices/image-capture-best-practices"
+                ]
+              },
+              {
+                "group": "Upload Images",
+                "pages": [
+                  "upload-images/upload-images"
+                ]
+              },
+              {
+                "group": "Essentials",
+                "pages": [
+                  "essentials/md_test",
+                  "essentials/python_readme",
+                  "essentials/test",
+                  "essentials/markdown-test",
+                  "essentials/code",
+                  "essentials/images",
+                  "essentials/settings",
+                  "essentials/navigation",
+                  "essentials/reusable-snippets"
+                ]
+              }
             ]
           },
           {
-            "group": "Image Capture Best Practices",
-            "pages": [
-              "image-capture-best-practices/image-capture-best-practices"
+            "tab": "API Reference",
+            "groups": [
+              {
+                "group": "API Documentation",
+                "pages": [
+                  "api-reference/introduction"
+                ]
+              },
+              {
+                "group": "Endpoint Examples",
+                "pages": [
+                  "api-reference/endpoint/get",
+                  "api-reference/endpoint/create",
+                  "api-reference/endpoint/delete",
+                  "api-reference/endpoint/webhook"
+                ]
+              }
             ]
           },
           {
-            "group": "Upload Images",
-            "pages": [
-              "upload-images/upload-images"
-            ]
-          },
-          {
-            "group": "Essentials",
-            "pages": [
-              "essentials/md_test",
-              "essentials/python_readme",
-              "essentials/test",
-              "essentials/markdown-test",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
-            ]
+            "tab": "LandingLens API",
+            "openapi": "landinglens-api/document.json"
           }
         ]
       },
       {
-        "tab": "API Reference",
-        "groups": [
-          {
-            "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint Examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
+        "dropdown": "VisionAgent",
+        "icon": "sqaure-terminal",
+        "pages": [
+          "essentials/md_test",
+          "essentials/python_readme"
         ]
-      },
-      {
-        "tab": "LandingLens API",
-        "openapi": "landinglens-api/document.json"
-    }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+      }
+    ]
   },
   "logo": {
     "light": "/logo/LandingAI-logo-primary-color-RGB.svg",
@@ -140,9 +115,9 @@
     }
   },
   "redirects": [
-  {
-    "source": "essentials/markdown",
-    "destination": "essentials/markdown-test"
-  }
-]
+    {
+      "source": "essentials/markdown",
+      "destination": "essentials/markdown-test"
+    }
+  ]
 }
