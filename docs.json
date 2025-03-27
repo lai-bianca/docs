@@ -9,6 +9,26 @@
   },
   "favicon": "/favicon_landing-ai.svg",
   "navigation": {
+    "dropdowns": [
+    {
+      "dropdown": "LandingLens",
+      "icon": "book-open",
+      "pages": [
+        "get-started/landinglens-get-started",
+        "introduction"
+      ]
+    }
+    {
+      "dropdown": "VisionAgent",
+      "icon": "sqaure-terminal",
+      "pages": [
+        "essentials/md_test",
+        "essentials/python_readme"
+      ]
+    }
+
+  ]
+}
     "tabs": [
       {
         "tab": "Guides",
