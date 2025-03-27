@@ -76,10 +76,10 @@
           },
           {
             "tab": "LandingLens API",
+            "openapi": "landinglens-api/document.json",
             "pages": [
               "landinglens-api/api-intro"
-            ],
-            "openapi": "landinglens-api/document.json"
+            ]
           }
         ]
       },
