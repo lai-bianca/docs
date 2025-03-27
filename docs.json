@@ -76,6 +76,9 @@
           },
           {
             "tab": "LandingLens API",
+            "pages": [
+              "landinglens-api/api-intro"
+            ],
             "openapi": "landinglens-api/document.json"
           }
         ]
