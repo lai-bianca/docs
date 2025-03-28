@@ -55,44 +55,58 @@
             ]
           },
           {
-            "tab": "API Reference",
-            "groups": [
-              {
-                "group": "API Documentation",
-                "pages": [
-                  "api-reference/introduction"
-                ]
-              },
-              {
-                "group": "Endpoint Examples",
-                "pages": [
-                  "api-reference/endpoint/get",
-                  "api-reference/endpoint/create",
-                  "api-reference/endpoint/delete",
-                  "api-reference/endpoint/webhook"
-                ]
-              }
+            "tab": "API",
+            "openapi": "landinglens-api/document.json"
+          },
+          {
+            "tab": "Libraries",
+            "pages": [
+              "landinglens-libraries/landinglens-libraries"
             ]
           },
           {
-            "tab": "LandingLens API",
-            "openapi": "landinglens-api/document.json",
+            "tab": "Cookbook",
             "pages": [
-              "landinglens-api/api-intro"
+              "cookbooks/cookbook-class"
+            ]
+          },
+          {
+            "tab": "Release Notes",
+            "pages": [
+              "landinglens-release-notes/landinglens-release-notes",
+              "landinglens-release-notes/landinglens-sf-release-notes"
             ]
           }
         ]
       },
       {
-        "dropdown": "VisionAgent",
-        "icon": "sqaure-terminal",
-        "pages": [
-          "agents/agents",
-          "agents/visionagent",
-          "agents/agentic-doc-ext",
-          "agents/agentic-api-key"
-        
-        ]
+        "dropdown": "Agentic AI",
+        "icon": "robot",
+        "tabs": [
+          {
+            "tab": "Guides",
+            "pages": [
+              "agents/agents",
+              "agents/visionagent",
+              "agents/agentic-doc-ext",
+              "agents/agentic-api-key"
+                ]
+
+},
+{
+  "tab": "Libraries",
+  "pages": [
+    "agents/agentic-libraries"
+      ]
+
+},
+{
+  "tab": "Release Notes",
+  "pages": [
+    "agents/agentic-release-notes"
+  ]
+}
+]
       }
     ]
   },
@@ -119,11 +133,6 @@
       "github": "https://github.com/landing-ai",
       "linkedin": "https://www.linkedin.com/company/landing-ai/"
     }
-  },
-  "redirects": [
-    {
-      "source": "essentials/markdown",
-      "destination": "essentials/markdown-test"
-    }
-  ]
+  }
+ 
 }

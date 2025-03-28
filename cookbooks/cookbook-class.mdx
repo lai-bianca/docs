@@ -1,0 +1,61 @@
+---
+title: 'Create and Deploy a Classification Model'
+---
+This tutorial walks you through how to use the LandingLens APIs and open-source Python libraries together to create a project and train a model in LandingLens. The LandingLens APIs are built using REST conventions and have standard HTTP features.
+
+## Example Use Case
+In the food production industry, maintaining consistent product quality and safety is crucial. Automated image classification can play a vital role in achieving this by identifying potential issues early in the production line. This tutorial focuses on developing a machine learning model to classify images captured by a camera on a factory line as either Clean or Contaminated.
+
+Clean images will solely contain cereal, while contaminated images may contain foreign objects such as metal fragments, plastic pieces, or other debris. The goal of this project is to build a classification model that can differentiate between these two categories. This will enable real-time quality control on the production line, potentially reducing waste and ensuring the safety of consumers.
+
+## Set Up Your Cereal Classification Project in LandingLens
+
+Our first step is to create a new project in LandingLens. We'll leverage the Python [requests library](https://pypi.org/project/requests/) to interact with the LandingLens API. We will also use the LandingLens POST endpoint: `https://api.landing.ai/v1/projects`.
+
+Here's what you need to provide:
+
+- `projectType`: This is a mandatory field and should be set to the type of project you're creating (e.g., "classification").
+- `name`: While not mandatory, it's highly recommended to name your project for easier identification. We'll use the descriptive name "cereal-classifier".
+
+Here's an example code snippet demonstrating how to create the project:
+
+```py
+import requests
+
+# Replace "YOUR_API_KEY" with your actual LandingLens platform API key
+api_key = "YOUR_API_KEY"
+
+# Define the project creation endpoint and parameters
+url = "https://api.landing.ai/v1/projects"
+data = {"projectType": "classification", "name": "cereal-classifier"}
+
+# Set the authorization header with your API key
+headers = {"apikey": api_key}
+
+response = requests.post(url, headers=headers, json=data)
+
+if response.status_code == 201:
+    response_data = response.json()
+    project_id = response_data["data"]["id"]
+    print(f"Project created with ID {project_id}")
+    print("Project created successfully!")
+else:
+    print(f"Error creating project: {response.text}")
+```
+
+```json title="New Project Example Response"
+{
+  "data": {
+    "id": 123,
+    "name": "new project",
+    "projectType": "classification",
+    "createdAt": "2023-08-24T14:15:22Z"
+  }
+}
+```
+
+## Next Steps
+
+After you’ve created a LandingLens project, make a note of the `id` in the response. This is the Project ID, and you will use it to interact with the project in later steps.
+
+Then, go to the next step: [Define Image Classes](https://landing-ai.github.io/public-rest-api/tutorial/classes/).
