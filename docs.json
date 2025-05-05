@@ -23,11 +23,20 @@
             ]
           },
           {
-            "group": "Documentation",
+            "group": "Parsing",
             "pages": [
-              "agents/visionagent",
-              "agents/agentic-doc-ext",
-              "agents/agentic-api-key"
+              "ade/ade-chunk-types",
+              "ade/ade-file-types",
+              "ade/ade-json-response",
+              "ade/ade-pricing",
+              "ade/ade-rate-limits"
+            ]
+          },
+          {
+            "group": "Tutorials",
+            "pages": [
+              "ade/ade-tutorial-1",
+              "ade/ade-tutorial-2"
             ]
           }
         ]
@@ -47,21 +56,32 @@
   "navbar": {
     "links": [
       {
+        "label": "Discord",
+        "href": "https://discord.com/invite/RVcW3j9RgR"
+      },
+      {
         "label": "Support",
         "href": "mailto:support@landing.ai"
+      },
+      {
+        "label": "Web App",
+        "href": "https://va.landing.ai/demo/doc-extraction"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Agentic Document Extraction Library",
+      "href": "https://github.com/landing-ai/agentic-doc"
     }
   },
   "footer": {
     "socials": {
-      "x": "https://twitter.com/landingAI",
+      "website": "https://landing.ai/",
+      "discord": "https://discord.com/invite/RVcW3j9RgR",
       "github": "https://github.com/landing-ai",
+      "youtube": "https://www.youtube.com/channel/UCYQS3jkfB79Diyr9sQJAj5Q",
       "linkedin": "https://www.linkedin.com/company/landing-ai/"
+      
     }
   }
 }
