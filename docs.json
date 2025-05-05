@@ -31,7 +31,11 @@
             ]
           }
         ]
-      }
+      },
+      {
+        "tab": "LL API",
+        "openapi": "https://api.landing.ai/openapi.json"
+        }
     ]
   },
 
